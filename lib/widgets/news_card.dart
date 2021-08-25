@@ -38,15 +38,21 @@ class NewsCard extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Container(
+                alignment: Alignment.centerRight,
                 child: Text(
-              title,
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-            )),
-            SizedBox(height: 4),
+                  title,
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  textAlign: TextAlign.right,
+                )),
+            SizedBox(height: 8),
             Container(
               child: Text(
                 description,
-                style: TextStyle(fontSize: 16, color: Colors.black54),
+                textAlign: TextAlign.right,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black54,
+                ),
               ),
             ),
             SizedBox(height: 12),
